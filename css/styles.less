@@ -1,0 +1,203 @@
+@body-bg: #FFFFFF;
+
+.cancel-line-break-margin {
+  margin-left: -4px;
+}
+
+#carousel {
+  width: 940px;
+  margin: 0 auto;
+  background-color: @body-bg;
+
+  .chart-container {
+    position: relative;
+    height: 300px;
+
+    .bg {
+      position: absolute;
+      background: url('../images/waterfall.jpg') no-repeat 0 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .bars,
+    .inverted-bars {
+      display: inline-block;
+
+      > div {
+        display: inline-block;
+        .cancel-line-break-margin;
+        width: 30px;
+        //    border: 1px solid red;
+
+        &:first-child {
+          margin-left: auto;
+        }
+
+        .inverted {
+          background-color: @body-bg;
+        }
+
+        .bar,
+        .gap {
+          height: inherit;
+          display: inline-block;
+        }
+
+        .bar {
+          width: 70%;
+          background-color: black;
+        }
+
+        .gap {
+          width: 29%;
+          .cancel-line-break-margin;
+          background-color: #ffffff;
+        }
+      }
+    }
+
+    .inverted-bars {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      > div {
+        position: relative;
+
+        .bar {
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  #bar1 {
+    .inverted { height: 50px; }
+    .regular { height: 250px; }
+  }
+
+  #bar2 {
+    .inverted { height: 70px; }
+    .regular { height: 230px; }
+  }
+
+  #bar3 {
+    .inverted { height: 240px; }
+    .regular { height: 60px; }
+  }
+
+  #bar4 {
+    .inverted { height: 215px; }
+    .regular { height: 85px; }
+  }
+
+  #bar5 {
+    .inverted { height: 200px; }
+    .regular { height: 100px; }
+  }
+
+  #bar6 {
+    .inverted { height: 65px; }
+    .regular { height: 135px; }
+  }
+
+  #bar7 {
+    .inverted { height: 190px; }
+    .regular { height: 110px; }
+  }
+
+  #bar8 {
+    .inverted { height: 210px; }
+    .regular { height: 90px; }
+  }
+
+  #bar9 {
+    .inverted { height: 20px; }
+    .regular { height: 280px; }
+  }
+
+  #bar10 {
+    .inverted { height: 280px; }
+    .regular { height: 20px; }
+  }
+
+  #bar11 {
+    .inverted { height: 225px; }
+    .regular { height: 75px; }
+  }
+
+  #bar12 {
+    .inverted { height: 50px; }
+    .regular { height: 250px; }
+  }
+
+  #bar13 {
+    .inverted { height: 235px; }
+    .regular { height: 65px; }
+  }
+
+  #bar14 {
+    .inverted { height: 220px; }
+    .regular { height: 80px; }
+  }
+
+
+
+  #bar15 {
+    height: 50px;
+  }
+
+  #bar16 {
+    height: 70px;
+  }
+
+  #bar17 {
+    height: 240px;
+  }
+
+  #bar18 {
+    height: 215px;
+  }
+
+  #bar19 {
+    height: 200px;
+  }
+
+  #bar20 {
+    height: 165px;
+  }
+
+  #bar21 {
+    height: 190px;
+  }
+
+  #bar22 {
+    height: 210px;
+  }
+
+  #bar23 {
+    height: 20px;
+  }
+
+  #bar24 {
+    height: 280px;
+  }
+
+  #bar25 {
+    height: 225px;
+  }
+
+  #bar26 {
+    height: 50px;
+  }
+
+  #bar27 {
+    height: 235px;
+  }
+
+  #bar28 {
+    height: 220px;
+  }
+}

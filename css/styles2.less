@@ -1,0 +1,312 @@
+//@body-bg: #FFFFFF;
+@body-bg: pink;
+
+.cancel-line-break-margin {
+  margin-left: -4px;
+}
+
+#carousel {
+  width: 940px;
+  margin: 0 auto;
+  background-color: @body-bg;
+
+  .chart-container {
+    position: relative;
+    height: 300px;
+    text-align: center;
+
+    .bg {
+      position: absolute;
+      background: url('../images/firehorse.jpg') no-repeat 0 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .bars {
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+
+      > div {
+        display: inline-block;
+        .cancel-line-break-margin;
+        width: 47px;
+
+        &:first-child {
+          margin-left: auto;
+        }
+
+        .inverted {
+          background-color: @body-bg;
+        }
+
+        .bar,
+        .gap {
+          height: inherit;
+          display: inline-block;
+        }
+
+        .bar {
+          width: 70%;
+          background-color: transparent;
+        }
+
+        .gap {
+          width: 29%;
+          .cancel-line-break-margin;
+          background-color: @body-bg;
+        }
+      }
+    }
+
+    .inverted-bars {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      > div {
+        position: relative;
+
+        .bar {
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  #bar1 {
+    .inverted { height: 50px; }
+    .regular { height: 250px; }
+  }
+
+  #bar2 {
+    .inverted { height: 70px; }
+    .regular { height: 230px; }
+  }
+
+  #bar3 {
+    .inverted { height: 240px; }
+    .regular { height: 60px; }
+  }
+
+  #bar4 {
+    .inverted { height: 215px; }
+    .regular { height: 85px; }
+  }
+
+  #bar5 {
+    .inverted { height: 200px; }
+    .regular { height: 100px; }
+  }
+
+  #bar6 {
+    .inverted { height: 165px; }
+    .regular { height: 135px; }
+  }
+
+  #bar7 {
+    .inverted { height: 190px; }
+    .regular { height: 110px; }
+  }
+
+  #bar8 {
+    .inverted { height: 210px; }
+    .regular { height: 90px; }
+  }
+
+  #bar9 {
+    .inverted { height: 20px; }
+    .regular { height: 280px; }
+  }
+
+  #bar10 {
+    .inverted { height: 280px; }
+    .regular { height: 20px; }
+  }
+
+  #bar11 {
+    .inverted { height: 225px; }
+    .regular { height: 75px; }
+  }
+
+  #bar12 {
+    .inverted { height: 50px; }
+    .regular { height: 250px; }
+  }
+
+  #bar13 {
+    .inverted { height: 235px; }
+    .regular { height: 65px; }
+  }
+
+  #bar14 {
+    .inverted { height: 220px; }
+    .regular { height: 80px; }
+  }
+
+  #bar15 {
+    .inverted { height: 50px; }
+    .regular { height: 250px; }
+  }
+
+  #bar16 {
+    .inverted { height: 70px; }
+    .regular { height: 230px; }
+  }
+
+  #bar17 {
+    .inverted { height: 240px; }
+    .regular { height: 60px; }
+  }
+
+  #bar18 {
+    .inverted { height: 215px; }
+    .regular { height: 85px; }
+  }
+
+  #bar19 {
+    .inverted { height: 200px; }
+    .regular { height: 100px; }
+  }
+
+  #bar20 {
+    .inverted { height: 165px; }
+    .regular { height: 135px; }
+  }
+
+  #bar21 {
+    .inverted { height: 190px; }
+    .regular { height: 110px; }
+  }
+
+  #bar22 {
+    .inverted { height: 210px; }
+    .regular { height: 90px; }
+  }
+
+  #bar23 {
+    .inverted { height: 20px; }
+    .regular { height: 280px; }
+  }
+
+  #bar24 {
+    .inverted { height: 280px; }
+    .regular { height: 20px; }
+  }
+
+  #bar25 {
+    .inverted { height: 225px; }
+    .regular { height: 75px; }
+  }
+
+  #bar26 {
+    .inverted { height: 0px; }
+    .regular { height: 300px; }
+  }
+
+  #bar27 {
+    .inverted { height: 235px; }
+    .regular { height: 65px; }
+  }
+
+  #bar28 {
+    .inverted { height: 220px; }
+    .regular { height: 80px; }
+  }
+
+  #bar29 {
+    .inverted { height: 235px; }
+    .regular { height: 65px; }
+  }
+
+  #bar30 {
+    .inverted { height: 220px; }
+    .regular { height: 80px; }
+  }
+
+  #bar31 {
+    .inverted { height: 220px; }
+    .regular { height: 80px; }
+  }
+
+  #bar32 {
+    .inverted { height: 50px; }
+    .regular { height: 250px; }
+  }
+
+  #bar33 {
+    .inverted { height: 70px; }
+    .regular { height: 230px; }
+  }
+
+  #bar34 {
+    .inverted { height: 240px; }
+    .regular { height: 60px; }
+  }
+
+  #bar35 {
+    .inverted { height: 215px; }
+    .regular { height: 85px; }
+  }
+
+  #bar36 {
+    .inverted { height: 200px; }
+    .regular { height: 100px; }
+  }
+
+  #bar37 {
+    .inverted { height: 165px; }
+    .regular { height: 135px; }
+  }
+
+  #bar38 {
+    .inverted { height: 190px; }
+    .regular { height: 110px; }
+  }
+
+  #bar39 {
+    .inverted { height: 210px; }
+    .regular { height: 90px; }
+  }
+
+  #bar40 {
+    .inverted { height: 20px; }
+    .regular { height: 280px; }
+  }
+
+  #bar41 {
+    .inverted { height: 280px; }
+    .regular { height: 20px; }
+  }
+
+  #bar42 {
+    .inverted { height: 225px; }
+    .regular { height: 75px; }
+  }
+
+  #bar43 {
+    .inverted { height: 50px; }
+    .regular { height: 250px; }
+  }
+
+  #bar44 {
+    .inverted { height: 235px; }
+    .regular { height: 65px; }
+  }
+
+  #bar45 {
+    .inverted { height: 220px; }
+    .regular { height: 80px; }
+  }
+
+  #bar46 {
+    .inverted { height: 235px; }
+    .regular { height: 65px; }
+  }
+
+  #bar47 {
+    .inverted { height: 220px; }
+    .regular { height: 80px; }
+  }
+}

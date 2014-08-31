@@ -1,0 +1,192 @@
+.cancel-line-break-margin {
+  margin-left: -4px;
+}
+#carousel {
+  width: 940px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+#carousel .chart-container {
+  position: relative;
+  height: 300px;
+}
+#carousel .chart-container .bg {
+  position: absolute;
+  background: url('../images/waterfall.jpg') no-repeat 0 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#carousel .chart-container .bars,
+#carousel .chart-container .inverted-bars {
+  display: inline-block;
+}
+#carousel .chart-container .bars > div,
+#carousel .chart-container .inverted-bars > div {
+  display: inline-block;
+  margin-left: -4px;
+  width: 30px;
+}
+#carousel .chart-container .bars > div:first-child,
+#carousel .chart-container .inverted-bars > div:first-child {
+  margin-left: auto;
+}
+#carousel .chart-container .bars > div .inverted,
+#carousel .chart-container .inverted-bars > div .inverted {
+  background-color: #ffffff;
+}
+#carousel .chart-container .bars > div .bar,
+#carousel .chart-container .inverted-bars > div .bar,
+#carousel .chart-container .bars > div .gap,
+#carousel .chart-container .inverted-bars > div .gap {
+  height: inherit;
+  display: inline-block;
+}
+#carousel .chart-container .bars > div .bar,
+#carousel .chart-container .inverted-bars > div .bar {
+  width: 70%;
+  background-color: black;
+}
+#carousel .chart-container .bars > div .gap,
+#carousel .chart-container .inverted-bars > div .gap {
+  width: 29%;
+  margin-left: -4px;
+  background-color: #ffffff;
+}
+#carousel .chart-container .inverted-bars {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#carousel .chart-container .inverted-bars > div {
+  position: relative;
+}
+#carousel .chart-container .inverted-bars > div .bar {
+  background-color: red;
+}
+#carousel #bar1 .inverted {
+  height: 50px;
+}
+#carousel #bar1 .regular {
+  height: 250px;
+}
+#carousel #bar2 .inverted {
+  height: 70px;
+}
+#carousel #bar2 .regular {
+  height: 230px;
+}
+#carousel #bar3 .inverted {
+  height: 240px;
+}
+#carousel #bar3 .regular {
+  height: 60px;
+}
+#carousel #bar4 .inverted {
+  height: 215px;
+}
+#carousel #bar4 .regular {
+  height: 85px;
+}
+#carousel #bar5 .inverted {
+  height: 200px;
+}
+#carousel #bar5 .regular {
+  height: 100px;
+}
+#carousel #bar6 .inverted {
+  height: 65px;
+}
+#carousel #bar6 .regular {
+  height: 135px;
+}
+#carousel #bar7 .inverted {
+  height: 190px;
+}
+#carousel #bar7 .regular {
+  height: 110px;
+}
+#carousel #bar8 .inverted {
+  height: 210px;
+}
+#carousel #bar8 .regular {
+  height: 90px;
+}
+#carousel #bar9 .inverted {
+  height: 20px;
+}
+#carousel #bar9 .regular {
+  height: 280px;
+}
+#carousel #bar10 .inverted {
+  height: 280px;
+}
+#carousel #bar10 .regular {
+  height: 20px;
+}
+#carousel #bar11 .inverted {
+  height: 225px;
+}
+#carousel #bar11 .regular {
+  height: 75px;
+}
+#carousel #bar12 .inverted {
+  height: 50px;
+}
+#carousel #bar12 .regular {
+  height: 250px;
+}
+#carousel #bar13 .inverted {
+  height: 235px;
+}
+#carousel #bar13 .regular {
+  height: 65px;
+}
+#carousel #bar14 .inverted {
+  height: 220px;
+}
+#carousel #bar14 .regular {
+  height: 80px;
+}
+#carousel #bar15 {
+  height: 50px;
+}
+#carousel #bar16 {
+  height: 70px;
+}
+#carousel #bar17 {
+  height: 240px;
+}
+#carousel #bar18 {
+  height: 215px;
+}
+#carousel #bar19 {
+  height: 200px;
+}
+#carousel #bar20 {
+  height: 165px;
+}
+#carousel #bar21 {
+  height: 190px;
+}
+#carousel #bar22 {
+  height: 210px;
+}
+#carousel #bar23 {
+  height: 20px;
+}
+#carousel #bar24 {
+  height: 280px;
+}
+#carousel #bar25 {
+  height: 225px;
+}
+#carousel #bar26 {
+  height: 50px;
+}
+#carousel #bar27 {
+  height: 235px;
+}
+#carousel #bar28 {
+  height: 220px;
+}
