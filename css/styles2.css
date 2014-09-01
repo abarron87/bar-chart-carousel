@@ -1,19 +1,21 @@
 .cancel-line-break-margin {
   margin-left: -4px;
 }
+body {
+  background: pink;
+}
 #carousel {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   background-color: #ffc0cb;
 }
 #carousel .chart-container {
   position: relative;
-  height: 300px;
+  height: 390px;
   text-align: center;
 }
 #carousel .chart-container .bg {
   position: absolute;
-  background: url('../images/firehorse.jpg') no-repeat 0 0;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -22,322 +24,136 @@
   display: inline-block;
   position: relative;
   z-index: 2;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
-#carousel .chart-container .bars > div {
+#carousel .chart-container .bars .bar {
   display: inline-block;
-  margin-left: -4px;
-  width: 47px;
-}
-#carousel .chart-container .bars > div:first-child {
-  margin-left: auto;
-}
-#carousel .chart-container .bars > div .inverted {
-  background-color: #ffc0cb;
-}
-#carousel .chart-container .bars > div .bar,
-#carousel .chart-container .bars > div .gap {
-  height: inherit;
-  display: inline-block;
-}
-#carousel .chart-container .bars > div .bar {
-  width: 70%;
-  background-color: transparent;
-}
-#carousel .chart-container .bars > div .gap {
-  width: 29%;
-  margin-left: -4px;
-  background-color: #ffc0cb;
-}
-#carousel .chart-container .inverted-bars {
+  width: 20px;
+  height: 440px;
+  margin-right: 5px;
+  background: url('../images/chart1.jpg') no-repeat;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
 }
-#carousel .chart-container .inverted-bars > div {
-  position: relative;
+#carousel .chart-container .bars .bar:first-child {
+  margin-left: 0;
 }
-#carousel .chart-container .inverted-bars > div .bar {
-  background-color: red;
+#carousel .chart-container .bars .bar.last {
+  margin-right: 0;
 }
-#carousel #bar1 .inverted {
-  height: 50px;
+#carousel #bar1 {
+  background-position: 0px -325px;
 }
-#carousel #bar1 .regular {
-  height: 250px;
+#carousel #bar2 {
+  background-position: -25px -300px;
 }
-#carousel #bar2 .inverted {
-  height: 70px;
+#carousel #bar3 {
+  background-position: -50px -275px;
 }
-#carousel #bar2 .regular {
-  height: 230px;
+#carousel #bar4 {
+  background-position: -75px -165px;
 }
-#carousel #bar3 .inverted {
-  height: 240px;
+#carousel #bar5 {
+  background-position: -100px -270px;
 }
-#carousel #bar3 .regular {
-  height: 60px;
+#carousel #bar6 {
+  background-position: -125px -260px;
 }
-#carousel #bar4 .inverted {
-  height: 215px;
+#carousel #bar7 {
+  background-position: -150px -290px;
 }
-#carousel #bar4 .regular {
-  height: 85px;
+#carousel #bar8 {
+  background-position: -175px -200px;
 }
-#carousel #bar5 .inverted {
-  height: 200px;
+#carousel #bar9 {
+  background-position: -200px -175px;
 }
-#carousel #bar5 .regular {
-  height: 100px;
+#carousel #bar10 {
+  background-position: -225px -175px;
 }
-#carousel #bar6 .inverted {
-  height: 165px;
+#carousel #bar11 {
+  background-position: -250px -60px;
 }
-#carousel #bar6 .regular {
-  height: 135px;
+#carousel #bar12 {
+  background-position: -275px -50px;
 }
-#carousel #bar7 .inverted {
-  height: 190px;
+#carousel #bar13 {
+  background-position: -300px -70px;
 }
-#carousel #bar7 .regular {
-  height: 110px;
+#carousel #bar14 {
+  background-position: -325px -30px;
 }
-#carousel #bar8 .inverted {
-  height: 210px;
+#carousel #bar15 {
+  background-position: -350px -10px;
 }
-#carousel #bar8 .regular {
-  height: 90px;
+#carousel #bar16 {
+  background-position: -375px 10px;
 }
-#carousel #bar9 .inverted {
-  height: 20px;
+#carousel #bar17 {
+  background-position: -400px -100px;
 }
-#carousel #bar9 .regular {
-  height: 280px;
+#carousel #bar18 {
+  background-position: -425px -50px;
 }
-#carousel #bar10 .inverted {
-  height: 280px;
+#carousel #bar19 {
+  background-position: -450px 30px;
 }
-#carousel #bar10 .regular {
-  height: 20px;
+#carousel #bar20 {
+  background-position: -475px 30px;
 }
-#carousel #bar11 .inverted {
-  height: 225px;
+#carousel #bar21 {
+  background-position: -500px 5px;
 }
-#carousel #bar11 .regular {
-  height: 75px;
+#carousel #bar22 {
+  background-position: -525px -20px;
 }
-#carousel #bar12 .inverted {
-  height: 50px;
+#carousel #bar23 {
+  background-position: -550px 20px;
 }
-#carousel #bar12 .regular {
-  height: 250px;
+#carousel #bar24 {
+  background-position: -575px 10px;
 }
-#carousel #bar13 .inverted {
-  height: 235px;
+#carousel #bar25 {
+  background-position: -600px 0px;
 }
-#carousel #bar13 .regular {
-  height: 65px;
+#carousel #bar26 {
+  background-position: -625px 0px;
 }
-#carousel #bar14 .inverted {
-  height: 220px;
+#carousel #bar27 {
+  background-position: -650px -10px;
 }
-#carousel #bar14 .regular {
-  height: 80px;
+#carousel #bar28 {
+  background-position: -675px -30px;
 }
-#carousel #bar15 .inverted {
-  height: 50px;
+#carousel #bar29 {
+  background-position: -700px -70px;
 }
-#carousel #bar15 .regular {
-  height: 250px;
+#carousel #bar30 {
+  background-position: -725px -100px;
 }
-#carousel #bar16 .inverted {
-  height: 70px;
+#carousel #bar31 {
+  background-position: -750px -15px;
 }
-#carousel #bar16 .regular {
-  height: 230px;
+#carousel #bar32 {
+  background-position: -775px -170px;
 }
-#carousel #bar17 .inverted {
-  height: 240px;
+#carousel #bar33 {
+  background-position: -800px -190px;
 }
-#carousel #bar17 .regular {
-  height: 60px;
+#carousel #bar34 {
+  background-position: -825px -200px;
 }
-#carousel #bar18 .inverted {
-  height: 215px;
+#carousel #bar35 {
+  background-position: -850px -210px;
 }
-#carousel #bar18 .regular {
-  height: 85px;
+#carousel #bar36 {
+  background-position: -875px -200px;
 }
-#carousel #bar19 .inverted {
-  height: 200px;
+#carousel #bar37 {
+  background-position: -900px -300px;
 }
-#carousel #bar19 .regular {
-  height: 100px;
-}
-#carousel #bar20 .inverted {
-  height: 165px;
-}
-#carousel #bar20 .regular {
-  height: 135px;
-}
-#carousel #bar21 .inverted {
-  height: 190px;
-}
-#carousel #bar21 .regular {
-  height: 110px;
-}
-#carousel #bar22 .inverted {
-  height: 210px;
-}
-#carousel #bar22 .regular {
-  height: 90px;
-}
-#carousel #bar23 .inverted {
-  height: 20px;
-}
-#carousel #bar23 .regular {
-  height: 280px;
-}
-#carousel #bar24 .inverted {
-  height: 280px;
-}
-#carousel #bar24 .regular {
-  height: 20px;
-}
-#carousel #bar25 .inverted {
-  height: 225px;
-}
-#carousel #bar25 .regular {
-  height: 75px;
-}
-#carousel #bar26 .inverted {
-  height: 0px;
-}
-#carousel #bar26 .regular {
-  height: 300px;
-}
-#carousel #bar27 .inverted {
-  height: 235px;
-}
-#carousel #bar27 .regular {
-  height: 65px;
-}
-#carousel #bar28 .inverted {
-  height: 220px;
-}
-#carousel #bar28 .regular {
-  height: 80px;
-}
-#carousel #bar29 .inverted {
-  height: 235px;
-}
-#carousel #bar29 .regular {
-  height: 65px;
-}
-#carousel #bar30 .inverted {
-  height: 220px;
-}
-#carousel #bar30 .regular {
-  height: 80px;
-}
-#carousel #bar31 .inverted {
-  height: 220px;
-}
-#carousel #bar31 .regular {
-  height: 80px;
-}
-#carousel #bar32 .inverted {
-  height: 50px;
-}
-#carousel #bar32 .regular {
-  height: 250px;
-}
-#carousel #bar33 .inverted {
-  height: 70px;
-}
-#carousel #bar33 .regular {
-  height: 230px;
-}
-#carousel #bar34 .inverted {
-  height: 240px;
-}
-#carousel #bar34 .regular {
-  height: 60px;
-}
-#carousel #bar35 .inverted {
-  height: 215px;
-}
-#carousel #bar35 .regular {
-  height: 85px;
-}
-#carousel #bar36 .inverted {
-  height: 200px;
-}
-#carousel #bar36 .regular {
-  height: 100px;
-}
-#carousel #bar37 .inverted {
-  height: 165px;
-}
-#carousel #bar37 .regular {
-  height: 135px;
-}
-#carousel #bar38 .inverted {
-  height: 190px;
-}
-#carousel #bar38 .regular {
-  height: 110px;
-}
-#carousel #bar39 .inverted {
-  height: 210px;
-}
-#carousel #bar39 .regular {
-  height: 90px;
-}
-#carousel #bar40 .inverted {
-  height: 20px;
-}
-#carousel #bar40 .regular {
-  height: 280px;
-}
-#carousel #bar41 .inverted {
-  height: 280px;
-}
-#carousel #bar41 .regular {
-  height: 20px;
-}
-#carousel #bar42 .inverted {
-  height: 225px;
-}
-#carousel #bar42 .regular {
-  height: 75px;
-}
-#carousel #bar43 .inverted {
-  height: 50px;
-}
-#carousel #bar43 .regular {
-  height: 250px;
-}
-#carousel #bar44 .inverted {
-  height: 235px;
-}
-#carousel #bar44 .regular {
-  height: 65px;
-}
-#carousel #bar45 .inverted {
-  height: 220px;
-}
-#carousel #bar45 .regular {
-  height: 80px;
-}
-#carousel #bar46 .inverted {
-  height: 235px;
-}
-#carousel #bar46 .regular {
-  height: 65px;
-}
-#carousel #bar47 .inverted {
-  height: 220px;
-}
-#carousel #bar47 .regular {
-  height: 80px;
+#carousel #bar38 {
+  background-position: -925px -330px;
 }

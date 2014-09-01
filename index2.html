@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/styles2.css" type="text/css"/>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenLite.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/plugins/CSSPlugin.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/easing/EasePack.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TimelineLite.min.js" type="text/javascript"></script>
     <title></title>
 </head>
@@ -15,336 +16,44 @@
     <div class="chart-container">
         <div class="bg"></div>
         <div class="bars">
-
-            <div id="bar1" data-heights="250,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar2" data-heights="230,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar3" data-heights="60,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar4" data-heights="85,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar5" data-heights="100,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar6" data-heights="135,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar7" data-heights="110,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar8" data-heights="90,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar9" data-heights="280,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar10" data-heights="20,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar11" data-heights="75,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar12" data-heights="250,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar13" data-heights="65,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar14" data-heights="80,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar15" data-heights="250,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar16" data-heights="60,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar17" data-heights="85,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar18" data-heights="100,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar19" data-heights="135,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div id="bar20" data-heights="110,70,120">
-                <div class="inverted"></div>
-                <div class="regular">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <!--<div id="bar21" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar22" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar23" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar24" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar25" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar26" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar27" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar28" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar29" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar30" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar31" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar32" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar33" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar34" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar35" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar36" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar37" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar38" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar39" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar40" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar41" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar42" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar43" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar44" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar45" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar46" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="bar47" data-heights="250,70,120">-->
-                <!--<div class="inverted"></div>-->
-                <!--<div class="regular">-->
-                    <!--<div class="bar"></div>-->
-                    <!--<div class="gap"></div>-->
-                <!--</div>-->
-            <!--</div>-->
+            <div id="bar1" class="bar" data-heights="25,70,120"></div>
+            <div id="bar2" class="bar" data-heights="50,70,120"></div>
+            <div id="bar3" class="bar" data-heights="75,70,120"></div>
+            <div id="bar4" class="bar" data-heights="185,70,120"></div>
+            <div id="bar5" class="bar" data-heights="80,70,120"></div>
+            <div id="bar6" class="bar" data-heights="90,70,120"></div>
+            <div id="bar7" class="bar" data-heights="60,70,120"></div>
+            <div id="bar8" class="bar" data-heights="150,70,120"></div>
+            <div id="bar9" class="bar" data-heights="175,70,120"></div>
+            <div id="bar10" class="bar" data-heights="175,70,120"></div>
+            <div id="bar11" class="bar" data-heights="290,70,120"></div>
+            <div id="bar12" class="bar" data-heights="300,70,120"></div>
+            <div id="bar13" class="bar" data-heights="280,70,120"></div>
+            <div id="bar14" class="bar" data-heights="320,70,120"></div>
+            <div id="bar15" class="bar" data-heights="340,70,120"></div>
+            <div id="bar16" class="bar" data-heights="360,70,120"></div>
+            <div id="bar17" class="bar" data-heights="250,70,120"></div>
+            <div id="bar18" class="bar" data-heights="300,70,120"></div>
+            <div id="bar19" class="bar" data-heights="380,70,120"></div>
+            <div id="bar20" class="bar" data-heights="380,70,120"></div>
+            <div id="bar21" class="bar" data-heights="355,70,120"></div>
+            <div id="bar22" class="bar" data-heights="330,70,120"></div>
+            <div id="bar23" class="bar" data-heights="370,70,120"></div>
+            <div id="bar24" class="bar" data-heights="360,70,120"></div>
+            <div id="bar25" class="bar" data-heights="350,70,120"></div>
+            <div id="bar26" class="bar" data-heights="350,70,120"></div>
+            <div id="bar27" class="bar" data-heights="340,70,120"></div>
+            <div id="bar28" class="bar" data-heights="320,70,120"></div>
+            <div id="bar29" class="bar" data-heights="280,70,120"></div>
+            <div id="bar30" class="bar" data-heights="250,70,120"></div>
+            <div id="bar31" class="bar" data-heights="235,70,120"></div>
+            <div id="bar32" class="bar" data-heights="180,70,120"></div>
+            <div id="bar33" class="bar" data-heights="160,70,120"></div>
+            <div id="bar34" class="bar" data-heights="150,70,120"></div>
+            <div id="bar35" class="bar" data-heights="140,70,120"></div>
+            <div id="bar36" class="bar" data-heights="150,70,120"></div>
+            <div id="bar37" class="bar" data-heights="50,70,120"></div>
+            <div id="bar38" class="bar last" data-heights="20,70,120"></div>
         </div>
     </div>
 </div>
@@ -353,10 +62,9 @@
     //        var tl = new TimelineLite();
 
     function BarChartCarousel(config){
-        this.barAnimationDuration = config.barAnimationDuration || 2000;
-        this.chartHeight = config.chartHeight || 300;
         this.charts = config.charts || 3;
         this.container = config.container || jQuery('body');
+        this.maxHeightAndOffset = -440;
         this.init();
     }
 
@@ -364,8 +72,6 @@
         init: function(){
             this.backgrounds = this.container.data('backgrounds').split(',');
             this.bars = this.container.find('.bars > div');
-            this.regularBarSelector = '.regular';
-            this.invertedBarSelector = '.inverted';
             this.setBarData();
             this.resetBars();
             this.setupTimeline();
@@ -379,21 +85,29 @@
                 var bar = jQuery(this);
 
                 self.barData.push({
-                    container: bar,
-                    regularBar: bar.children(self.regularBarSelector),
-                    invertedBar: bar.children(self.invertedBarSelector),
+                    bar: bar,
                     heights: bar.data('heights').split(',')
                 });
             });
         },
 
         resetBars: function(){
-            this.bars.children(this.regularBarSelector).height(0);
-            this.bars.children(this.invertedBarSelector).height(this.chartHeight);
+//            this.bars.height(1);
+
+            var left = 0;
+            this.bars.each(function(){
+                var bar = jQuery(this);
+
+                bar.css({
+                    left: left,
+                    bottom: '-' + (bar.height() - 1) + 'px'
+                });
+                left += 25;
+            });
         },
 
         setupTimeline: function(){
-            this.chartsTl = new TimelineLite({ paused: true });
+            this.chartsTl = new TimelineLite();
 
             for(var i = 0; i < this.charts; i++){
                 var chartTl = new TimelineLite();
@@ -401,22 +115,20 @@
                 chartTl.add('myLabel', 0);
 
                 for(var j = 0, len = this.barData.length; j < len; j++){
-                    var bar = this.barData[j];
+                    var barData = this.barData[j];
 
-                    chartTl.add(TweenLite.to(bar.regularBar, 2, { height: bar.heights[i] }), 'myLabel');
-                    chartTl.add(TweenLite.to(bar.invertedBar, 2, { height: (this.chartHeight - bar.heights[i]) }), 'myLabel');
+                    chartTl.add(TweenLite.to(barData.bar, 0.8, { bottom: this.maxHeightAndOffset + parseInt(barData.heights[i], 10), ease: Back.easeOut }), '-=0.7');
                 }
 
-                this.chartsTl.add(chartTl, 0);
+                this.chartsTl.add(chartTl);
             }
         }
     };
 
     a = new BarChartCarousel({
-        container: jQuery('#carousel')
+        container: jQuery('#carousel'),
+        charts: 1
     });
-
-    a.init();
 </script>
 </body>
 </html>

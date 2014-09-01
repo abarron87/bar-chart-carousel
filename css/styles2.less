@@ -1,23 +1,27 @@
 //@body-bg: #FFFFFF;
 @body-bg: pink;
+@bottom-offset: 50px;
 
 .cancel-line-break-margin {
   margin-left: -4px;
 }
 
+body {
+  background: pink;
+}
+
 #carousel {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   background-color: @body-bg;
 
   .chart-container {
     position: relative;
-    height: 300px;
+    height: 390px;
     text-align: center;
 
     .bg {
       position: absolute;
-      background: url('../images/firehorse.jpg') no-repeat 0 0;
       width: 100%;
       height: 100%;
       z-index: 1;
@@ -27,286 +31,218 @@
       display: inline-block;
       position: relative;
       z-index: 2;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
 
-      > div {
+      .bar {
         display: inline-block;
-        .cancel-line-break-margin;
-        width: 47px;
+//        .cancel-line-break-margin;
+        width: 20px;
+        height: 390px + @bottom-offset;
+        margin-right: 5px;
+        background: url('../images/chart1.jpg') no-repeat;
+        position: absolute;
+        bottom: 0;
 
         &:first-child {
-          margin-left: auto;
+          margin-left: 0;
         }
 
-        .inverted {
-          background-color: @body-bg;
-        }
-
-        .bar,
-        .gap {
-          height: inherit;
-          display: inline-block;
-        }
-
-        .bar {
-          width: 70%;
-          background-color: transparent;
-        }
-
-        .gap {
-          width: 29%;
-          .cancel-line-break-margin;
-          background-color: @body-bg;
-        }
-      }
-    }
-
-    .inverted-bars {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      > div {
-        position: relative;
-
-        .bar {
-          background-color: red;
+        &.last {
+          margin-right: 0;
         }
       }
     }
   }
 
   #bar1 {
-    .inverted { height: 50px; }
-    .regular { height: 250px; }
+    // height: 25px + @bottom-offset;
+    background-position: 0px (-375px + @bottom-offset);
   }
 
   #bar2 {
-    .inverted { height: 70px; }
-    .regular { height: 230px; }
+    // height: 50px + @bottom-offset;
+    background-position: -25px (-350px + @bottom-offset);
   }
 
   #bar3 {
-    .inverted { height: 240px; }
-    .regular { height: 60px; }
+    // height: 75px + @bottom-offset;
+    background-position: -50px (-325px + @bottom-offset);
   }
 
   #bar4 {
-    .inverted { height: 215px; }
-    .regular { height: 85px; }
+    // height: 185px + @bottom-offset;
+    background-position: -75px (-215px + @bottom-offset);
   }
 
   #bar5 {
-    .inverted { height: 200px; }
-    .regular { height: 100px; }
+    // height: 80px + @bottom-offset;
+    background-position: -100px (-320px + @bottom-offset);
   }
 
   #bar6 {
-    .inverted { height: 165px; }
-    .regular { height: 135px; }
+    // height: 90px + @bottom-offset;
+    background-position: -125px (-310px + @bottom-offset);
   }
 
   #bar7 {
-    .inverted { height: 190px; }
-    .regular { height: 110px; }
+    // height: 60px + @bottom-offset;
+    background-position: -150px (-340px + @bottom-offset);
   }
 
   #bar8 {
-    .inverted { height: 210px; }
-    .regular { height: 90px; }
+    // height: 150px + @bottom-offset;
+    background-position: -175px (-250px + @bottom-offset);
   }
 
   #bar9 {
-    .inverted { height: 20px; }
-    .regular { height: 280px; }
+    // height: 175px + @bottom-offset;
+    background-position: -200px (-225px + @bottom-offset);
   }
 
   #bar10 {
-    .inverted { height: 280px; }
-    .regular { height: 20px; }
+    // height: 175px + @bottom-offset;
+    background-position: -225px (-225px + @bottom-offset);
   }
 
   #bar11 {
-    .inverted { height: 225px; }
-    .regular { height: 75px; }
+    // height: 290px + @bottom-offset;
+    background-position: -250px (-110px + @bottom-offset);
   }
 
   #bar12 {
-    .inverted { height: 50px; }
-    .regular { height: 250px; }
+    // height: 300px + @bottom-offset;
+    background-position: -275px (-100px + @bottom-offset);
   }
 
   #bar13 {
-    .inverted { height: 235px; }
-    .regular { height: 65px; }
+    // height: 280px + @bottom-offset;
+    background-position: -300px (-120px + @bottom-offset);
   }
 
   #bar14 {
-    .inverted { height: 220px; }
-    .regular { height: 80px; }
+    // height: 320px + @bottom-offset;
+    background-position: -325px (-80px + @bottom-offset);
   }
 
   #bar15 {
-    .inverted { height: 50px; }
-    .regular { height: 250px; }
+    // height: 340px + @bottom-offset;
+    background-position: -350px (-60px + @bottom-offset);
   }
 
   #bar16 {
-    .inverted { height: 70px; }
-    .regular { height: 230px; }
+    // height: 360px + @bottom-offset;
+    background-position: -375px (-40px + @bottom-offset);
   }
 
   #bar17 {
-    .inverted { height: 240px; }
-    .regular { height: 60px; }
+    // height: 250px + @bottom-offset;
+    background-position: -400px (-150px + @bottom-offset);
   }
 
   #bar18 {
-    .inverted { height: 215px; }
-    .regular { height: 85px; }
+    // height: 300px + @bottom-offset;
+    background-position: -425px (-100px + @bottom-offset);
   }
 
   #bar19 {
-    .inverted { height: 200px; }
-    .regular { height: 100px; }
+    // height: 380px + @bottom-offset;
+    background-position: -450px (-20px + @bottom-offset);
   }
 
   #bar20 {
-    .inverted { height: 165px; }
-    .regular { height: 135px; }
+    // height: 380px + @bottom-offset;
+    background-position: -475px (-20px + @bottom-offset);
   }
 
   #bar21 {
-    .inverted { height: 190px; }
-    .regular { height: 110px; }
+    // height: 355px + @bottom-offset;
+    background-position: -500px (-45px + @bottom-offset);
   }
 
   #bar22 {
-    .inverted { height: 210px; }
-    .regular { height: 90px; }
+    // height: 330px + @bottom-offset;
+    background-position: -525px (-70px + @bottom-offset);
   }
 
   #bar23 {
-    .inverted { height: 20px; }
-    .regular { height: 280px; }
+    // height: 370px + @bottom-offset;
+    background-position: -550px (-30px + @bottom-offset);
   }
 
   #bar24 {
-    .inverted { height: 280px; }
-    .regular { height: 20px; }
+    // height: 360px + @bottom-offset;
+    background-position: -575px (-40px + @bottom-offset);
   }
 
   #bar25 {
-    .inverted { height: 225px; }
-    .regular { height: 75px; }
+    // height: 350px + @bottom-offset;
+    background-position: -600px (-50px + @bottom-offset);
   }
 
   #bar26 {
-    .inverted { height: 0px; }
-    .regular { height: 300px; }
+    // height: 350px + @bottom-offset;
+    background-position: -625px (-50px + @bottom-offset);
   }
 
   #bar27 {
-    .inverted { height: 235px; }
-    .regular { height: 65px; }
+    // height: 340px + @bottom-offset;
+    background-position: -650px (-60px + @bottom-offset);
   }
 
   #bar28 {
-    .inverted { height: 220px; }
-    .regular { height: 80px; }
+    // height: 320px + @bottom-offset;
+    background-position: -675px (-80px + @bottom-offset);
   }
 
   #bar29 {
-    .inverted { height: 235px; }
-    .regular { height: 65px; }
+    // height: 280px + @bottom-offset;
+    background-position: -700px (-120px + @bottom-offset);
   }
 
   #bar30 {
-    .inverted { height: 220px; }
-    .regular { height: 80px; }
+    // height: 250px + @bottom-offset;
+    background-position: -725px (-150px + @bottom-offset);
   }
 
   #bar31 {
-    .inverted { height: 220px; }
-    .regular { height: 80px; }
+    // height: 235px + @bottom-offset;
+    background-position: -750px (-65px + @bottom-offset);
   }
 
   #bar32 {
-    .inverted { height: 50px; }
-    .regular { height: 250px; }
+    // height: 180px + @bottom-offset;
+    background-position: -775px (-220px + @bottom-offset);
   }
 
   #bar33 {
-    .inverted { height: 70px; }
-    .regular { height: 230px; }
+    // height: 160px + @bottom-offset;
+    background-position: -800px (-240px + @bottom-offset);
   }
 
   #bar34 {
-    .inverted { height: 240px; }
-    .regular { height: 60px; }
+    // height: 150px + @bottom-offset;
+    background-position: -825px (-250px + @bottom-offset);
   }
 
   #bar35 {
-    .inverted { height: 215px; }
-    .regular { height: 85px; }
+    // height: 140px + @bottom-offset;
+    background-position: -850px (-260px + @bottom-offset);
   }
 
   #bar36 {
-    .inverted { height: 200px; }
-    .regular { height: 100px; }
+    // height: 150px + @bottom-offset;
+    background-position: -875px (-250px + @bottom-offset);
   }
 
   #bar37 {
-    .inverted { height: 165px; }
-    .regular { height: 135px; }
+    // height: 50px + @bottom-offset;
+    background-position: -900px (-350px + @bottom-offset);
   }
 
   #bar38 {
-    .inverted { height: 190px; }
-    .regular { height: 110px; }
-  }
-
-  #bar39 {
-    .inverted { height: 210px; }
-    .regular { height: 90px; }
-  }
-
-  #bar40 {
-    .inverted { height: 20px; }
-    .regular { height: 280px; }
-  }
-
-  #bar41 {
-    .inverted { height: 280px; }
-    .regular { height: 20px; }
-  }
-
-  #bar42 {
-    .inverted { height: 225px; }
-    .regular { height: 75px; }
-  }
-
-  #bar43 {
-    .inverted { height: 50px; }
-    .regular { height: 250px; }
-  }
-
-  #bar44 {
-    .inverted { height: 235px; }
-    .regular { height: 65px; }
-  }
-
-  #bar45 {
-    .inverted { height: 220px; }
-    .regular { height: 80px; }
-  }
-
-  #bar46 {
-    .inverted { height: 235px; }
-    .regular { height: 65px; }
-  }
-
-  #bar47 {
-    .inverted { height: 220px; }
-    .regular { height: 80px; }
+    // height: 20px + @bottom-offset;
+    background-position: -925px (-380px + @bottom-offset);
   }
 }
