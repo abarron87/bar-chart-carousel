@@ -1,192 +1,158 @@
 .cancel-line-break-margin {
   margin-left: -4px;
 }
+body {
+  background: pink;
+}
 #carousel {
-  width: 940px;
+  width: 875px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #ffc0cb;
 }
 #carousel .chart-container {
   position: relative;
-  height: 300px;
+  height: 390px;
+  text-align: center;
 }
 #carousel .chart-container .bg {
   position: absolute;
-  background: url('../images/waterfall.jpg') no-repeat 0 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
-#carousel .chart-container .bars,
-#carousel .chart-container .inverted-bars {
+#carousel .chart-container .bars {
   display: inline-block;
-}
-#carousel .chart-container .bars > div,
-#carousel .chart-container .inverted-bars > div {
-  display: inline-block;
-  margin-left: -4px;
-  width: 30px;
-}
-#carousel .chart-container .bars > div:first-child,
-#carousel .chart-container .inverted-bars > div:first-child {
-  margin-left: auto;
-}
-#carousel .chart-container .bars > div .inverted,
-#carousel .chart-container .inverted-bars > div .inverted {
-  background-color: #ffffff;
-}
-#carousel .chart-container .bars > div .bar,
-#carousel .chart-container .inverted-bars > div .bar,
-#carousel .chart-container .bars > div .gap,
-#carousel .chart-container .inverted-bars > div .gap {
-  height: inherit;
-  display: inline-block;
-}
-#carousel .chart-container .bars > div .bar,
-#carousel .chart-container .inverted-bars > div .bar {
-  width: 70%;
-  background-color: black;
-}
-#carousel .chart-container .bars > div .gap,
-#carousel .chart-container .inverted-bars > div .gap {
-  width: 29%;
-  margin-left: -4px;
-  background-color: #ffffff;
-}
-#carousel .chart-container .inverted-bars {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#carousel .chart-container .inverted-bars > div {
   position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
-#carousel .chart-container .inverted-bars > div .bar {
-  background-color: red;
+#carousel .chart-container .bars .bar {
+  display: inline-block;
+  width: 20px;
+  height: 430px;
+  background: url('../images/sydneytest_01.jpg') no-repeat;
+  position: absolute;
+  bottom: 0;
 }
-#carousel #bar1 .inverted {
-  height: 50px;
+#carousel .chart-container .bars .bar:first-child {
+  margin-left: 0;
 }
-#carousel #bar1 .regular {
-  height: 250px;
+#carousel .chart-container .bars .bar.last {
+  margin-right: 0;
 }
-#carousel #bar2 .inverted {
-  height: 70px;
+#carousel #bar1 {
+  background-position: 0px -335px;
 }
-#carousel #bar2 .regular {
-  height: 230px;
+#carousel #bar2 {
+  background-position: -25px -310px;
 }
-#carousel #bar3 .inverted {
-  height: 240px;
+#carousel #bar3 {
+  background-position: -50px -285px;
 }
-#carousel #bar3 .regular {
-  height: 60px;
+#carousel #bar4 {
+  background-position: -75px -175px;
 }
-#carousel #bar4 .inverted {
-  height: 215px;
+#carousel #bar5 {
+  background-position: -100px -280px;
 }
-#carousel #bar4 .regular {
-  height: 85px;
+#carousel #bar6 {
+  background-position: -125px -270px;
 }
-#carousel #bar5 .inverted {
-  height: 200px;
+#carousel #bar7 {
+  background-position: -150px -300px;
 }
-#carousel #bar5 .regular {
-  height: 100px;
+#carousel #bar8 {
+  background-position: -175px -210px;
 }
-#carousel #bar6 .inverted {
-  height: 65px;
+#carousel #bar9 {
+  background-position: -200px -185px;
 }
-#carousel #bar6 .regular {
-  height: 135px;
+#carousel #bar10 {
+  background-position: -225px -185px;
 }
-#carousel #bar7 .inverted {
-  height: 190px;
+#carousel #bar11 {
+  background-position: -250px -70px;
 }
-#carousel #bar7 .regular {
-  height: 110px;
+#carousel #bar12 {
+  background-position: -275px -60px;
 }
-#carousel #bar8 .inverted {
-  height: 210px;
+#carousel #bar13 {
+  background-position: -300px -80px;
 }
-#carousel #bar8 .regular {
-  height: 90px;
-}
-#carousel #bar9 .inverted {
-  height: 20px;
-}
-#carousel #bar9 .regular {
-  height: 280px;
-}
-#carousel #bar10 .inverted {
-  height: 280px;
-}
-#carousel #bar10 .regular {
-  height: 20px;
-}
-#carousel #bar11 .inverted {
-  height: 225px;
-}
-#carousel #bar11 .regular {
-  height: 75px;
-}
-#carousel #bar12 .inverted {
-  height: 50px;
-}
-#carousel #bar12 .regular {
-  height: 250px;
-}
-#carousel #bar13 .inverted {
-  height: 235px;
-}
-#carousel #bar13 .regular {
-  height: 65px;
-}
-#carousel #bar14 .inverted {
-  height: 220px;
-}
-#carousel #bar14 .regular {
-  height: 80px;
+#carousel #bar14 {
+  background-position: -325px -40px;
 }
 #carousel #bar15 {
-  height: 50px;
+  background-position: -350px -20px;
 }
 #carousel #bar16 {
-  height: 70px;
+  background-position: -375px 0px;
 }
 #carousel #bar17 {
-  height: 240px;
+  background-position: -400px -110px;
 }
 #carousel #bar18 {
-  height: 215px;
+  background-position: -425px -60px;
 }
 #carousel #bar19 {
-  height: 200px;
+  background-position: -450px 20px;
 }
 #carousel #bar20 {
-  height: 165px;
+  background-position: -475px 20px;
 }
 #carousel #bar21 {
-  height: 190px;
+  background-position: -500px -5px;
 }
 #carousel #bar22 {
-  height: 210px;
+  background-position: -525px -30px;
 }
 #carousel #bar23 {
-  height: 20px;
+  background-position: -550px 10px;
 }
 #carousel #bar24 {
-  height: 280px;
+  background-position: -575px 0px;
 }
 #carousel #bar25 {
-  height: 225px;
+  background-position: -600px -10px;
 }
 #carousel #bar26 {
-  height: 50px;
+  background-position: -625px -10px;
 }
 #carousel #bar27 {
-  height: 235px;
+  background-position: -650px -20px;
 }
 #carousel #bar28 {
-  height: 220px;
+  background-position: -675px -40px;
+}
+#carousel #bar29 {
+  background-position: -700px -80px;
+}
+#carousel #bar30 {
+  background-position: -725px -110px;
+}
+#carousel #bar31 {
+  background-position: -750px -25px;
+}
+#carousel #bar32 {
+  background-position: -775px -180px;
+}
+#carousel #bar33 {
+  background-position: -800px -200px;
+}
+#carousel #bar34 {
+  background-position: -825px -210px;
+}
+#carousel #bar35 {
+  background-position: -850px -220px;
+}
+#carousel #bar36 {
+  background-position: -875px -210px;
+}
+#carousel #bar37 {
+  background-position: -900px -310px;
+}
+#carousel #bar38 {
+  background-position: -925px -340px;
 }

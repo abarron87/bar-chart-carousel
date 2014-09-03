@@ -4,131 +4,170 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenLite.min.js" type="text/javascript"></script>-->
+    <script src="js/vendor/TweenLite.1.13.2.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/plugins/CSSPlugin.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/easing/EasePack.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TimelineLite.min.js" type="text/javascript"></script>
     <title></title>
 </head>
 <body>
-    <div id="carousel" class="hero">
-        <div class="chart-container">
-            <div class="bg"></div>
-            <div class="bars">
-
-                <div id="bar1">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar2">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar3">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar4">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar5">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar6">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar7">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar8">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar9">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar10">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar11">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar12">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar13">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar14">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div class="inverted-bars">
-
-                <div id="bar15">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar16">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar17">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar18">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar19">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar20">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar21">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar22">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar23">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar24">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar25">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar26">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar27">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-                <div id="bar28">
-                    <div class="bar"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-         </div>
+<div id="carousel" class="hero" data-backgrounds="images/firehorse.jpg,images/waterfall.jpg,images/bla.jpg">
+    <div class="chart-container">
+        <div class="bg"></div>
+        <div class="bars">
+            <div id="bar1" class="bar" data-heights="25,50,120"></div>
+            <div id="bar2" class="bar" data-heights="50,40,120"></div>
+            <div id="bar3" class="bar" data-heights="75,60,120"></div>
+            <div id="bar4" class="bar" data-heights="185,70,120"></div>
+            <div id="bar5" class="bar" data-heights="80,80,120"></div>
+            <div id="bar6" class="bar" data-heights="90,90,120"></div>
+            <div id="bar7" class="bar" data-heights="60,100,120"></div>
+            <div id="bar8" class="bar" data-heights="150,110,120"></div>
+            <div id="bar9" class="bar" data-heights="175,120,120"></div>
+            <div id="bar10" class="bar" data-heights="175,130,120"></div>
+            <div id="bar11" class="bar" data-heights="290,140,120"></div>
+            <div id="bar12" class="bar" data-heights="300,190,120"></div>
+            <div id="bar13" class="bar" data-heights="280,200,120"></div>
+            <div id="bar14" class="bar" data-heights="320,240,120"></div>
+            <div id="bar15" class="bar" data-heights="340,230,120"></div>
+            <div id="bar16" class="bar" data-heights="360,230,120"></div>
+            <div id="bar17" class="bar" data-heights="250,275,120"></div>
+            <div id="bar18" class="bar" data-heights="300,280,120"></div>
+            <div id="bar19" class="bar" data-heights="380,285,120"></div>
+            <div id="bar20" class="bar" data-heights="380,320,120"></div>
+            <div id="bar21" class="bar" data-heights="355,370,120"></div>
+            <div id="bar22" class="bar" data-heights="330,380,120"></div>
+            <div id="bar23" class="bar" data-heights="370,390,120"></div>
+            <div id="bar24" class="bar" data-heights="360,270,120"></div>
+            <div id="bar25" class="bar" data-heights="350,250,120"></div>
+            <div id="bar26" class="bar" data-heights="350,240,120"></div>
+            <div id="bar27" class="bar" data-heights="340,230,120"></div>
+            <div id="bar28" class="bar" data-heights="320,220,120"></div>
+            <div id="bar29" class="bar" data-heights="280,160,120"></div>
+            <div id="bar30" class="bar" data-heights="250,80,120"></div>
+            <div id="bar31" class="bar" data-heights="235,120,120"></div>
+            <div id="bar32" class="bar" data-heights="180,90,120"></div>
+            <div id="bar33" class="bar" data-heights="160,70,120"></div>
+            <div id="bar34" class="bar" data-heights="150,55,120"></div>
+            <div id="bar35" class="bar" data-heights="140,30,120"></div>
+            <div id="bar36" class="bar" data-heights="150,40,120"></div>
+            <div id="bar37" class="bar" data-heights="50,20,120"></div>
+            <div id="bar38" class="bar last" data-heights="20,15,120"></div>
+        </div>
     </div>
+</div>
+
+<script>
+    /**
+     * BarChartCarousel constructor.
+     * @param config
+     * @constructor
+     */
+    function BarChartCarousel(config){
+        this.charts = config.charts || 3;
+        this.container = config.container || jQuery('body');
+        this.chartHeight = config.chartHeight || 390;
+        this.bottomOffset = config.bottomOffset || 40;
+        this.init();
+    }
+
+    BarChartCarousel.prototype = {
+        init: function(){
+            this.backgrounds = this.container.data('backgrounds').split(',');
+            this.bars = this.container.find('.bars > div');
+            this.setBarData();
+            this.setInitialState();
+            this.setupTimeline();
+        },
+
+        /**
+         * setBarData
+         * Cache the bar jQuery object along with an array of its heights.
+         * Better than scraping the bar from DOM in each loop in setipTimeline.
+        */
+        setBarData: function(){
+            var self = this;
+
+            this.barData = [];
+            this.bars.each(function(){
+                var bar = jQuery(this);
+
+                self.barData.push({
+                    bar: bar,
+                    heights: bar.data('heights').split(',')
+                });
+            });
+        },
+
+        /**
+         * setInitialState
+         * Hide all but 1 pixel of each bar under the 'ground'.
+         * Shift the absolutely positioned bars to sit next to each other.
+         */
+        setInitialState: function(){
+            var left = 0,
+                self = this;
+
+            this.bars.each(function(){
+                var bar = jQuery(this);
+
+                bar.css({
+                    left: left,
+                    bottom: '-' + ((self.chartHeight + self.bottomOffset) - 1) + 'px'
+                });
+                left += 23; // 20px wide with 3px gap.
+            });
+        },
+
+        /**
+         * setupTimeline
+         * Creation of the animation.
+         * Iterates over the amount of charts and for each one adds the tween for every bar.
+         * Adds a delay between each chart.
+         */
+        setupTimeline: function(){
+            this.chartsTl = new TimelineLite();
+
+            for(var i = 0; i < this.charts; i++){
+                var chartTl = new TimelineLite();
+
+                chartTl.add('myLabel', 0);
+
+                for(var j = 0, len = this.barData.length; j < len; j++){
+                    var barData = this.barData[j];
+
+                    chartTl.add(
+                        TweenLite.to(
+                            barData.bar,
+                            0.8,
+                            {
+                                bottom: (-(this.chartHeight + this.bottomOffset)) + parseInt(barData.heights[i], 10),
+                                ease: Back.easeOut,
+                                onStart: (function(i,j,bar,heights){
+                                    // Create closure to maintain local variable values.
+                                    // Alter background position depending on visible height (CSS bottom).
+                                    return function(){
+                                        bar.css('backgroundPosition', '-' + (j * 23) + 'px -' + (390 - heights[i]) + 'px');
+                                    }
+                                })(i,j,barData.bar,barData.heights)
+                            }
+                        ),
+                        '-=0.7'
+                    );
+                }
+
+                //Add timeline (chart) to main timeline. Delay it until 3 seconds after the previous chart has finished loading.
+                this.chartsTl.add(chartTl, '+=' + ((i > 0) ? 3 : 0));
+            }
+        }
+    };
+
+    a = new BarChartCarousel({
+        container: jQuery('#carousel'),
+        charts: 1
+    });
+</script>
 </body>
 </html>
