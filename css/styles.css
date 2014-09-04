@@ -43,11 +43,11 @@ body {
 }
 #carousel .chart-container .bars .bar span {
   content: '';
-  opacity: 0;
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   background-repeat: no-repeat;
+  background-image: url('../images/sydneytest_01.jpg');
 }
