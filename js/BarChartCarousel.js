@@ -77,7 +77,13 @@ BarChartCarousel.prototype = {
         var self = this,
             backgroundSpans = this.bars.children('span');
 
-        this.chartsTl = new TimelineLite();
+        this.chartsTl = new TimelineLite({
+            paused: true,
+            onComplete: function(){
+                console.log(this);
+                setTimeout(this.restart.bind(this), 3000);
+            }
+        });
 
         // Create a timeline for each chart.
         for(var i = 0; i < this.charts; i++){
@@ -130,6 +136,7 @@ BarChartCarousel.prototype = {
                         ),
                         '-=0.5'
                     );
+
                 })(barData, self.chartBackgrounds, i, j);
             }
 
